@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
+
+puts("deleting items...")
+puts("deleting users...")
+User.destroy_all
+Item.destroy_all
+
+addresses = File.read("./seed_helpers/fake_addresses.txt.txt").split
+File.foreach("./ski_seeds.txt") do |line|
+price = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+item = Item.new(category: "Skis", condition: CONDITIONS.sample, price_per_day: price.sample)
+item.location = addresses.sample
+file = URI.open(line)
+item.images.attach(io: file, content: 'image/png')
+user = User.new(email: Faker::Internet.email, password: "1234567")
+user.item = item
+end
