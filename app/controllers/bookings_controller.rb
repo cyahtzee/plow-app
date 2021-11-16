@@ -6,16 +6,18 @@ class BookingsController < ApplicationController
     # @user = User.find(params[:user_id])
     @booking = Booking.new(booking_params)
     @booking.user = current_user
+    authorize @booking
     if @booking.save
+      # change the status to pending
       redirect_to item_path(@item)
     else
-      redem 'items/show.html.erb'
+      render 'items/show.html.erb'
     end
   end
 
   private
 
   def booking_params
-    require.params[:booking].permit[:item_id, :user_id]
+    params.require(:booking).permit(:item_id, :user_id, :start_date, :end_date)
   end
 end

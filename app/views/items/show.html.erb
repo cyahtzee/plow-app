@@ -1,1 +1,7 @@
-<p>Waiting for seeds to test</p>
+<%= @item.title %>
+
+<%= simple_form_for [@item, @booking] do |f| %>
+  <%= f.input :start_date, as: :date, html5: true %>
+  <%= f.input :end_date, as: :date, html5: true %>
+  <%= f.submit class: 'new-btn' %>
+<% end %>
