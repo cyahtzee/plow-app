@@ -7,7 +7,7 @@
       <%= link_to item_path(Item.find(booking.item_id)), class: "list-group-item list-group-item-action active" do %>
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1"><%= Item.find(booking.item_id).title %></h5>
-            <small><%= booking.created_at %></small>
+            <small><%= pluralize((Time.now - booking.created_at).to_i/86400.ceil, "day") %> ago</small>
           </div>
           <p class="mb-1 text-center"><%= booking.start_date %>-<%= booking.end_date %></p>
           <div class="d-flex justify-content-between">
@@ -26,7 +26,7 @@
   </div>
 </div>
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
-  <span><strong><%= current_user.first_name  %></strong> <i class="fas fa-snowman"></i> Welcome back!</span>
+  <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
   <a data-dismiss="alert" aria-label="Close">
   </a>
 </div>
