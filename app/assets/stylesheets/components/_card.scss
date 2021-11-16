@@ -2,27 +2,30 @@
   position: relative;
   width: 250px;
   overflow: hidden;
-  background: $light-gray;
+  background: $snow;
   padding: 8px;
   margin: 8px 0;
   border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  background-image: asset-url("plow-card-background.png");
+  background-size: cover;
   h2 {
     margin-bottom: 0rem;
     color: $dark-blue;
-    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    text-shadow: 0 0 2px $snow;
     font-size: 1.4rem;
     font-weight: bold;
   }
   h3 {
     padding: 8px;
     border-radius: 8px;
-    text-shadow: 0 0 1px rgba(0,0,0,0.2);
-    font-size: 1rem;
+    text-shadow: 0 0 2px $snow;
+    font-size: 1.2rem;
   }
   p {
-    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    text-shadow: 0 0 2px $snow;
     margin-bottom: 0.4rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -49,7 +52,7 @@ border-radius: 2px;
   left: 16px;
   top:  16px;
   color: $gray;
-  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  text-shadow: 0 0 1px $gray;
   background-color: $snow;
   padding: 4px;
   border-radius: 4px;
@@ -59,7 +62,7 @@ border-radius: 2px;
   position: absolute;
   right: 12px;
   top:  12px;
-  width: 48px;
+  width: 40px;
   transition: 1s;
 }
 .card-textbox {
@@ -76,7 +79,7 @@ border-radius: 2px;
   flex-direction: column;
   p {
     font-size: 0.8rem;
-    color: $gray;
     font-weight: lighter;
+    color: $gray;
   }
 }

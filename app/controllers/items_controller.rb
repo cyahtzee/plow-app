@@ -6,6 +6,7 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     @booking = Booking.new
+    @user = User.find(@item.user_id)
     authorize @item
   end
   # We have routes for new & create but not part of the initial core journey
