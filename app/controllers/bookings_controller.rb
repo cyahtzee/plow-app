@@ -1,15 +1,13 @@
 class BookingsController < ApplicationController
   def create
-    # need to display a form on the item show that leads to booking create
-    # item_id probably don't need to pass?
     @item = Item.find(params[:item_id])
-    # @user = User.find(params[:user_id])
     @booking = Booking.new(booking_params)
     @booking.user = current_user
+    @booking.item_id = params[:item_id]
     authorize @booking
     if @booking.save
-      # change the status to pending
-      redirect_to item_path(@item)
+      @booking.update! status: 2
+      redirect_to items_path
     else
       render 'items/show.html.erb'
     end
