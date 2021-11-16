@@ -85,7 +85,7 @@ File.foreach("db/seed_helpers/poles.txt") do |line|
 
   item = Item.new(category: "Poles", condition: Item::CONDITIONS.sample, price_per_day: price.sample)
   item.location = addresses.sample
-  item.title = "poles"
+  item.title = "ski poles"
   item.description = "don't forget to grab a pair of poles. It's always a good idea!"
   file = URI.open(line)
   item.photo.attach(io: file, filename: item.title, content_type: 'image/png')
