@@ -1,0 +1,25 @@
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  font-family: $headers-font;
+}
+
+h2 {
+    margin-bottom: 0rem;
+    color: $dark-blue;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  h3 {
+    padding: 8px;
+    border-radius: 8px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    font-size: 1rem;
+  }
+  p {
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    margin-bottom: 0.4rem;
+  }
