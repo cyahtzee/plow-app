@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1>Welcome back: <%= current_user.first_name  %></h1>
+      <h2>Pending booking request</h2>
+        <ul>
+        <%= @bookings.each do |booking| %>
+        <% if booking.pending? %>
+         <li><%= cl_image_tag(booking.item_id.photo.key), alt: booking.item_id.title %></li>
+        <% end %>
+        </ul>
+      <h2>Active Bookings: </h2>
+        <ul>
+          <%= @bookings.each do |booking| %>
+          <% if booking.reserved? %>
+          <li><%= cl_image_tag(booking.item_id.photo.key), alt: booking.item_id.title do %>
+          <p>Starts: <%= booking.start_day %></p>
+          <p>Ends: <%= booking.end_day %></p>
+          <% end %>
+          </li>
+          <% end %>
+        </ul>
+    </div>
+  </div>
+</div>
