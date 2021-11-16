@@ -7,4 +7,6 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     authorize @item
   end
+  # We have routes for new & create but not part of the initial core journey
+  # Need to add strong params for create
 end
