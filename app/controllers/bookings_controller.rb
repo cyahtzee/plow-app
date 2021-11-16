@@ -3,9 +3,9 @@ class BookingsController < ApplicationController
     # need to display a form on the item show that leads to booking create
     # item_id probably don't need to pass?
     @item = Item.find(params[:item_id])
-    @user = User.find(params[:user_id])
+    # @user = User.find(params[:user_id])
     @booking = Booking.new(booking_params)
-    @booking.user = @user
+    @booking.user = current_user
     if @booking.save
       redirect_to item_path(@item)
     else
