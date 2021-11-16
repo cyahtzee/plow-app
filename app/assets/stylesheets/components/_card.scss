@@ -80,3 +80,17 @@ border-radius: 2px;
     font-weight: lighter;
   }
 }
+
+.card-xl {
+  background: $light-gray;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  h4 {
+    margin-bottom: 0;
+    padding: 0 24px;
+  }
+  p {
+    margin-bottom: 0;
+    padding: 0 24px;
+  }
+}
