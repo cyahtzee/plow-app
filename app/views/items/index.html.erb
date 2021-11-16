@@ -1,1 +1,32 @@
-<p>Waiting for the seeds to populate</p>
+<div class="navbar-plow"><h1>Items</h1></div>
+
+<div class="container">
+  <div class="grid">
+    <div class="row">
+        <% @items.each do |item| %>
+          <div class="col">
+            <%= link_to item_path(item) do%>
+            <div class="card-large">
+              <img src="<%= cl_image_path item.photo.key, height: 200, width: 234, crop: :fill, class: "item-card-image" %>" alt="Plow item">
+              <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-user avatar"/>
+              <p class="card-item-category"><%= item.category %></p>
+              <div class="card-textbox">
+                <h2><%= item.title.capitalize %></h2>
+                <div class="card-info">
+                  <div>
+                    <p>Size: <strong><%= item.size %></strong></p>
+                    <p><strong><%= item.condition %></strong></p>
+                  </div>
+                  <div class="card-price">
+                    <p>Price per day:</p>
+                    <h3>¥<%= number_with_delimiter(item.price_per_day, delimter: "," ) %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>
