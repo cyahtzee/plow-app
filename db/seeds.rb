@@ -3,12 +3,12 @@ require 'open-uri'
 puts("deleting items...")
 puts("deleting users...")
 puts("creating admins")
+Item.destroy_all
 User.destroy_all
 User.create!(first_name: "Matias", last_name: "Acuna", email: "agroang@gmail.com", password: "1234567")
 User.create!(first_name: "Ryan", last_name: "Johnson", email: "ryan.a.y.johnson@gmail.com", password: "1234567")
 User.create!(first_name: "Kostya", last_name: "Yatsenko", email: "moahtdeep@gmail.com", password: "1234567")
 guest = User.create!(first_name: "Dirk", last_name: "Dirkinson", email: "honorable_user91@gmail.com", password: "1234567")
-Item.destroy_all
 
 # file = File.open("db/fake_addresses.txt")
 # file_data = file.readlines.map(&:chomp)
