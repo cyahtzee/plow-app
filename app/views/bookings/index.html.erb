@@ -1,9 +1,9 @@
 <div class="container">
 <div class="row">
-  <div class="col-8 offset-2">
-      <div class="container d-flex">
+  <div class="col-6 offset-3">
+      <div class="container d-flex flex-column bd-highlight mb-3">
       <% @bookings.each do |booking| %>
-      <div class="list-group">
+      <div class="list-group p-2 bd-highlight">
       <%= link_to item_path(Item.find(booking.item_id)), class: "list-group-item list-group-item-action active" do %>
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1"><%= Item.find(booking.item_id).title %></h5>
