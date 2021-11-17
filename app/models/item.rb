@@ -2,6 +2,8 @@ class Item < ApplicationRecord
   belongs_to :user
   has_many :bookings
   has_one_attached :photo
+  geocoded_by :location
+  after_validation :geocode, if: :will_save_change_to_location?
   SIZES = ["S", "M", "L", "XL", "XXL"]
   SHOESIZES = ["25", "26", "27", "28", "29"]
   LENGTH = ["163", "159", "168", "173", "174", "181", "188"]
