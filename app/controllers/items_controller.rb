@@ -1,6 +1,13 @@
 class ItemsController < ApplicationController
   def index
     @items = policy_scope(Item)
+
+    @markers = @items.geocoded.map do |item|
+      {
+        lat: item.latitude,
+        lng: item.longitude
+      }
+    end
   end
 
   def show
