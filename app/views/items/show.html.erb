@@ -1,11 +1,14 @@
 <div class="navbar navbar-expand-sm navbar-plow">
   <h1>PLOW</h1>
   <ul class="navbar-nav">
-  <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
-  <li class="nav-item mr-4"><h2><%= link_to "My Bookings", bookings_path %></h2></li>
+    <li class="nav-item mr-4">
+      <h2><%= link_to "All Listings", items_path %></h2>
+    </li>
+    <li class="nav-item mr-4">
+      <h2><%= link_to "My Bookings", bookings_path %></h2>
+    </li>
   </ul>
 </div>
-
 <div class="container">
   <div class="row">
     <div class="col-6">
@@ -17,30 +20,30 @@
             <h3>¥<strong><%= number_with_delimiter(@item.price_per_day, :delimiter => ',') %></strong></h3>
           </div>
           <div class="p-2">
-            <p>Location: <%= @item.location %></strong></p>
-          </div>
+            <p>Location: <%= Geocoder.search(@item.location).first.address %></strong></p>
         </div>
-        <div class="container d-flex justify-content-center">
-          <%= cl_image_tag @item.photo.key, width: 380, height: 380, crop: :fill, class: 'img-fluid m-2' %>
-        </div>
-        <p>Size: <strong><%= @item.size %></strong></p>
-        <p>Condition: <strong><%= @item.condition %></strong></p>
-        <p>Description: <%= @item.description.capitalize %></p>
       </div>
+      <div class="container d-flex justify-content-center">
+        <%= cl_image_tag @item.photo.key, width: 380, height: 380, crop: :fill, class: 'img-fluid m-2' %>
+      </div>
+      <p>Size: <strong><%= @item.size %></strong></p>
+      <p>Condition: <strong><%= @item.condition %></strong></p>
+      <p>Description: <%= @item.description.capitalize %></p>
     </div>
-    <div class="col-6">
-      <div class="m-4">
-        <%= simple_form_for [@item, @booking] do |f| %>
-          <%= f.input :start_date, as: :date, html5: true %>
-          <%= f.input :end_date, as: :date, html5: true %>
-          <%= f.submit class: 'button-frost' %>
-        <% end %>
-      </div>
-      <div id="map"
+  </div>
+  <div class="col-6">
+    <div class="m-4">
+      <%= simple_form_for [@item, @booking] do |f| %>
+        <%= f.input :start_date, as: :date, html5: true %>
+        <%= f.input :end_date, as: :date, html5: true %>
+        <%= f.submit class: 'button-frost' %>
+      <% end %>
+    </div>
+    <div id="map"
         style="width: 100%; height: 250px;"
         data-markers="<%= @markers.to_json %>"
         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-      </div>
     </div>
   </div>
+</div>
 </div>
