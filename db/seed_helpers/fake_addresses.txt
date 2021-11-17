@@ -1,200 +1,113 @@
-425-19	Tomoecho	Shizuoka shi aoi ku	Shizuoka ken
-884-20	Kagamimachi kamikagami	Yatsushiro shi	Kumamoto ken
-68-13	Nishiyoshinocho yushio	Gojo shi	Nara ken
-561-6	Oicho	Aisai shi	Aichi ken
-1-864-15	Higashikashiwa	Kashiwa shi	Chiba ken
-215-13	Akimachi yurugi	Kunisaki shi	Oita ken
-790-13	Akaiwa mizunashi	Kesennuma shi	Miyagi ken
-479-2	Tonemachi chidori	Numata shi	Gumma ken
-1-655-12	Sugumocho	Nagoya shi mizuho ku	Aichi ken
-530-14	Mihatacho ikenodaihigashi	Nabari shi	Mie ken
-2-393-20	Hottsucho sukakita	Hashima shi	Gifu ken
-276-19	Minamihara sasanomachi	Yonezawa shi	Yamagata ken
-496-13	Utatsu miyakata	Motoyoshi gun minamisanriku cho	Miyagi ken
-330-14	Muikano	Agano shi	Niigata ken
-213-4	Kawaramachi	Kawasaki shi saiwai ku	Kanagawa ken
-212-12	Shimizu	Chikusei shi	Ibaraki ken
-198-17	Korimotocho	Miyakonojo shi	Miyazaki ken
-4-162-18	Nagae	Toyama shi	Toyama ken
-270-9	Kitaonocho	Toyota shi	Aichi ken
-333-13	Takahata	Higashiokitama gun takahata machi	Yamagata ken
-269-4	Shimoiwakawa	Yamamoto gun mitane cho	Akita ken
-1-378-20	Shiginohigashi	Osaka shi joto ku	Osaka fu
-268-15	Jindai jitoho	Minamiawaji shi	Hyogo ken
-124-5	Sawara	Taki gun odai cho	Mie ken
-1-787-14	Shanoki	Kitakyushu shi moji ku	Fukuoka ken
-3-117-1	Matsusonocho	Nagoya shi mizuho ku	Aichi ken
-196-17	Yumiki	Yosa gun yosano cho	Kyoto fu
-824-4	Gondomachi	Kumamoto shi minami ku	Kumamoto ken
-238-15	Hachimancho miyama	Gujo shi	Gifu ken
-967-3	Toge	Hatsukaichi shi	Hiroshima ken
-937-2	Shikamaku yamasaki	Himeji shi	Hyogo ken
-536-18	Obe	Shozu gun tonosho cho	Kagawa ken
-3-939-4	Imai	Gojo shi	Nara ken
-126-12	Nakacho	Kumagaya shi	Saitama ken
-819-8	Tobai	Akkeshi gun akkeshi cho	Hokkaido
-529-2	Kakizukashinden	Kuwana shi	Mie ken
-127-19	Jotocho	Shizuoka shi aoi ku	Shizuoka ken
-2-658-9	Araicho komatsubara	Takasago shi	Hyogo ken
-29-17	Shiohicho	Handa shi	Aichi ken
-907-12	Takasucho	Miyazaki shi	Miyazaki ken
-876-3	Akagimachi sakae	Shibukawa shi	Gumma ken
-3-510-4	Nishi14-jokita	Obihiro shi	Hokkaido
-3-454-1	Ueda	Matsubara shi	Osaka fu
-33-3	Kutsumi	Tsuruga shi	Fukui ken
-23-7	Karuizawa	Nagaoka shi	Niigata ken
-78-12	Kamine	Haga gun ichikai machi	Tochigi ken
-814-10	Yanagiyama	Tsubame shi	Niigata ken
-287-13	Kunobe	Yasu shi	Shiga ken
-827-3	Shimokajiya	Murakami shi	Niigata ken
-46-13	Sumiyoshi	Oshima gun china cho	Kagoshima ken
-948-19	Yamasakicho yoi	Shiso shi	Hyogo ken
-1-608-17	Shimomuneoka	Shiki shi	Saitama ken
-155-20	Okusawa	Setana gun imakane cho	Hokkaido
-4-467-4	Maejioyacho	Marugame shi	Kagawa ken
-229-4	Hara	Hatsukaichi shi	Hiroshima ken
-197-6	Shimogokemmachi	Hagi shi	Yamaguchi ken
-921-20	Yoshiimachi yata	Takasaki shi	Gumma ken
-2-479-12	Shinkaicho	Tokoname shi	Aichi ken
-928-14	Harada	Nishimurayama gun oe machi	Yamagata ken
-227-16	Sobashima	Seki shi	Gifu ken
-797-20	Yokogoshi	Niigata shi konan ku	Niigata ken
-683-15	Issaicho shingu	Tatsuno shi	Hyogo ken
-788-7	Niisatocho seki	Kiryu shi	Gumma ken
-176-3	Muramatsu	Fukuroi shi	Shizuoka ken
-953-2	Osozu	Shimomashiki gun misato machi	Kumamoto ken
-331-9	Bentencho	Kobe shi chuo ku	Hyogo ken
-124-10	Kataguchi	Minamiakita gun ogata mura	Akita ken
-666-13	Yanagawa	Kamisu shi	Ibaraki ken
-379-15	Kamizone	Kitasoma gun tone machi	Ibaraki ken
-477-12	Ikebe	Fukuchiyama shi	Kyoto fu
-4-317-1	Ryoke	Yokohama shi izumi ku	Kanagawa ken
-3-960-18	Umpin	Obama shi	Fukui ken
-821-18	Minamikatamachi sotora	Tome shi	Miyagi ken
-117-12	Murasakino kamitsukiyamacho	Kyoto shi kita ku	Kyoto fu
-523-1	Yamakawacho kaize	Yoshinogawa shi	Tokushima ken
-591-20	Minamihatacho kasaji	Imari shi	Saga ken
-4-537-5	X	Kaga shi	Ishikawa ken
-66-6	Washinoyashinden	Kashiwa shi	Chiba ken
-886-7	Yokosunahoncho	Shizuoka shi shimizu ku	Shizuoka ken
-949-1	Horikawacho	Yonezawa shi	Yamagata ken
-622-10	Toyotacho era	Shimonoseki shi	Yamaguchi ken
-919-5	O	Nishimuro gun shirahama cho	Wakayama ken
-709-20	Nagasaki	Noshiro shi	Akita ken
-380-4	Shimookubocho	Suzuka shi	Mie ken
-3-541-11	Kasuga	Tokushima shi	Tokushima ken
-173-9	Shionoecho kaminishiotsu	Takamatsu shi	Kagawa ken
-417-1	Karahashi saijicho	Kyoto shi minami ku	Kyoto fu
-4-431-12	Soden odori	Gifu shi	Gifu ken
-1-797-14	Sakabegaoka	Yokkaichi shi	Mie ken
-257-20	Ichinowatari	Shimohei gun tanohata mura	Iwate ken
-521-19	Shimmachi	Yashio shi	Saitama ken
-521-9	Kamisho	Nakaniikawa gun kamiichi machi	Toyama ken
-308-9	Shimobayashimachi	Hitoyoshi shi	Kumamoto ken
-674-3	Okishimmachi	Kurashiki shi	Okayama ken
-632-14	Tomiaimachi tanoshiri	Kumamoto shi minami ku	Kumamoto ken
-248-17	Isobecho yamahara	Shima shi	Mie ken
-799-13	Iwasedobamachi	Toyama shi	Toyama ken
-201-13	Wakinosawa kinami	Mutsu shi	Aomori ken
-446-7	Ikeshita	Sukagawa shi	Fukushima ken
-876-13	Yawatamachi	Nanao shi	Ishikawa ken
-464-6	Kamiura tsuiura	Saiki shi	Oita ken
-562-1	Aono	Sado shi	Niigata ken
-743-4	Nobutori	Nakagawa gun ikeda cho	Hokkaido
-415-15	Shimonakada	Joetsu shi	Niigata ken
-3-187-8	Haruokatori	Nagoya shi chikusa ku	Aichi ken
-461-6	Kongojimachi	Nomi shi	Ishikawa ken
-527-18	Miyamacho	Hachioji shi	Tokyo to
-2-723-6	X	Yawatahama shi	Ehime ken
-411-6	Toyotamamachi kaifuna	Tsushima shi	Nagasaki ken
-861-1	Hanaokacho	Kanoya shi	Kagoshima ken
-183-11	Hongocho	Funabashi shi	Chiba ken
-384-15	Nakachiyo	Tokoname shi	Aichi ken
-1-996-12	Terazu	Nishio shi	Aichi ken
-278-5	Sagawano	Shimotsuga gun nogi machi	Tochigi ken
-796-3	Gongendo	Iruma gun moroyama machi	Saitama ken
-589-15	Minamitomamu	Ashoro gun rikubetsu cho	Hokkaido
-783-20	Sakanocho	Komatsushima shi	Tokushima ken
-540-17	Sannancho hatauchi	Tamba shi	Hyogo ken
-552-2	Kanno	Katori shi	Chiba ken
-264-3	Asahicho	Setana gun imakane cho	Hokkaido
-2-781-20	Kuroishino	Morioka shi	Iwate ken
-797-17	Daimachi	Kawasaki shi kawasaki ku	Kanagawa ken
-136-12	Omotego nakadera	Shirakawa shi	Fukushima ken
-802-4	Yadomishimo	Hagi shi	Yamaguchi ken
-335-14	Katsuyama uragawachi	Miyako gun miyako machi	Fukuoka ken
-72-11	Kitazemmae	Kamikita gun tohoku machi	Aomori ken
-4-336-2	Horainakamachi minami	Kato gun otofuke cho	Hokkaido
-272-1	Uchinokamishimmachi	Niigata shi nishi ku	Niigata ken
-152-10	Hiraokamachi	Fukuoka shi chuo ku	Fukuoka ken
-35-15	Fujiokamachi heya	Tochigi shi	Tochigi ken
-540-4	Toide sakaemachi	Takaoka shi	Toyama ken
-701-2	Furusekimachi	Kofu shi	Yamanashi ken
-535-17	Kamesatomachi	Maebashi shi	Gumma ken
-636-20	Kuranashimachi	Nakatsu shi	Oita ken
-64-7	Hiranuki	Kakuda shi	Miyagi ken
-981-16	Sahodai nishimachi	Nara shi	Nara ken
-616-9	Niisatocho okubo	Kiryu shi	Gumma ken
-243-13	Iijimacho	Yokohama shi sakae ku	Kanagawa ken
-221-19	Toyosatocho shimogyu	Tome shi	Miyagi ken
-3-696-13	Isecho	Yokohama shi nishi ku	Kanagawa ken
-2-654-18	Ekimae	Inazawa shi	Aichi ken
-445-20	Mandaracho	Kyoto shi kamigyo ku	Kyoto fu
-504-13	Ichibancho	Obama shi	Fukui ken
-170-4	Funabashicho	Okayama shi kita ku	Okayama ken
-2-84-17	Mojiri kasugacho	Akabira shi	Hokkaido
-651-20	Maruokacho matsukawacho	Sakai shi	Fukui ken
-155-17	Tokudagicho	Wakayama shi	Wakayama ken
-368-9	Naze arira	Amami shi	Kagoshima ken
-38-10	Koyodai	Nihommatsu shi	Fukushima ken
-427-19	Miyatamachi	Takaoka shi	Toyama ken
-799-6	Kazuramakicho	Higashiomi shi	Shiga ken
-731-11	Iwaishima	Kumage gun kaminoseki cho	Yamaguchi ken
-727-11	Naka	Kamogawa shi	Chiba ken
-228-20	Omachi	Murakami shi	Niigata ken
-270-9	Shimonaguri	Hanno shi	Saitama ken
-351-16	Oinomachi	Matsuyama shi	Ehime ken
-2-943-14	Bannaguro 1-jo	Ishikari shi	Hokkaido
-431-9	Oyama	Noda shi	Chiba ken
-763-13	Araimachi	Kurume shi	Fukuoka ken
-845-3	Naokicho	Kagoshima shi	Kagoshima ken
-288-15	Hachimanshinden	Inabe gun toin cho	Mie ken
-921-10	Sone	Chosei gun chosei mura	Chiba ken
-845-3	Nitsuta	Higashimatsushima shi	Miyagi ken
-897-17	Oue	Agawa gun niyodogawa cho	Kochi ken
-590-7	Kitaheizawa	Sakata shi	Yamagata ken
-350-17	Shimotaga	Atami shi	Shizuoka ken
-921-4	Jimbee	Inzai shi	Chiba ken
-628-3	Fuchumachi kamize	Toyama shi	Toyama ken
-313-7	Geshicho	Sabae shi	Fukui ken
-990-7	Takebecho nakada	Okayama shi kita ku	Okayama ken
-3-87-17	Eiwa	Higashiosaka shi	Osaka fu
-585-14	Kosugecho	Hitachiota shi	Ibaraki ken
-235-11	Kobishikemachi	Kanazawa shi	Ishikawa ken
-793-17	Mizusawaku inarida	Oshu shi	Iwate ken
-307-19	Kawawacho	Hamamatsu shi minami ku	Shizuoka ken
-587-6	Yoshikawaku yamagata	Joetsu shi	Niigata ken
-4-626-15	Shikamaku miyake	Himeji shi	Hyogo ken
-258-5	Shinoharacho	Hamamatsu shi nishi ku	Shizuoka ken
-962-14	Jikojicho	Takasago shi	Hyogo ken
-184-9	Kagayaki	Agano shi	Niigata ken
-1-810-12	Hosei	Chita gun taketoyo cho	Aichi ken
-58-15	Agocho koka	Shima shi	Mie ken
-156-1	Mashitomi	Kasukabe shi	Saitama ken
-513-9	Shimogamo hangicho	Kyoto shi sakyo ku	Kyoto fu
-807-8	Kawanago	Omitama shi	Ibaraki ken
-586-11	Hakusan	Sorachi gun naie cho	Hokkaido
-250-19	Arakawadai	Iwafune gun sekikawa mura	Niigata ken
-424-3	Minamisuehirocho	Handa shi	Aichi ken
-945-8	Hashigeta	Odate shi	Akita ken
-711-7	Uwano	Uozu shi	Toyama ken
-217-14	Kawajiricho kobata	Kure shi	Hiroshima ken
-868-8	Shinyamacho	Ashikaga shi	Tochigi ken
-731-3	Fujihira	Higashimatsura gun genkai cho	Saga ken
-869-5	Hagurosurusumi	Inuyama shi	Aichi ken
-496-17	Nishimagarimachi	Kitakyushu shi yahatanishi ku	Fukuoka ken
-200-10	X	Niimi shi	Okayama ken
-274-6	Shiodani	Ojiya shi	Niigata ken
-112-12	Miyaura	Yamagata shi	Yamagata ken
-528-6	Retsukecho	Nagahama shi	Shiga ken
-349-9	Esashiku fujisato	Oshu shi	Iwate ken
+Kasugaicho shizume, Fuefuki shi, Yamanashi ken
+Nitobukuro, Obanazawa shi, Yamagata ken
+Tsurumaki, Kitakata shi, Fukushima ken
+Nishiyamacho sakata, Kashiwazaki shi, Niigata ken
+Misakimachi jogashima, Miura shi, Kanagawa ken
+Emmamaecho, Kyoto shi kamigyo ku, Kyoto fu
+Kamihikona, Misato shi, Saitama ken
+Ibukacho, Minokamo shi, Gifu ken
+Kobuchisawacho kamisasao, Hokuto shi, Yamanashi ken
+Nakajima, Kisarazu shi, Chiba ken
+Narukonsen onikobe, Osaki shi, Miyagi ken
+Tanokaito, Hidaka gun inami cho, Wakayama ken
+Fukuda, Ninohe shi, Iwate ken
+Kawakami, Myoko shi, Niigata ken
+Hatashima, Karatsu shi, Saga ken
+Motokajicho, Hachinohe shi, Aomori ken
+Ikahomachi mizusawa, Shibukawa shi, Gumma ken
+Konora, Matsuyama shi, Ehime ken
+Naka, Yoshino gun nosegawa mura, Nara ken
+Imade, Gose shi, Nara ken
+Nadachiku toge, Joetsu shi, Niigata ken
+Hiratahigashi, Matsumoto shi, Nagano ken
+Harigi nishi, Kochi shi, Kochi ken
+Yamanoe, Hirakata shi, Osaka fu
+Misumicho furuichiba, Hamada shi, Shimane ken
+Sumiyoshicho, Kagoshima shi, Kagoshima ken
+Nishigaoka, Yokohama shi izumi ku, Kanagawa ken
+Chiharacho, Nagoya shi nakamura ku, Aichi ken
+Ochicho nakayama, Karatsu shi, Saga ken
+Takenosato, Iwanuma shi, Miyagi ken
+Koyamotomachi, Neyagawa shi, Osaka fu
+Daishoji korobamachi, Kaga shi, Ishikawa ken
+Masamunecho, Takahashi shi, Okayama ken
+Shintomicho, Kashiwa shi, Chiba ken
+Mizuochi, Toyama shi, Toyama ken
+Kamiaoyama, Higashiibaraki gun shirosato machi, Ibaraki ken
+728-2 Tamada, Hokota shi, Ibaraki ken
+885-15 Yatamachi, Nanao shi, Ishikawa ken
+Ishizu nakacho, Yaizu shi, Shizuoka ken
+Toyokawacho, Tomakomai shi, Hokkaido
+Tomioka, Mombetsu gun okoppe cho, Hokkaido
+Utatsu konagashiba, Motoyoshi gun minamisanriku cho, Miyagi ken
+Muraoka, Shimotsuma shi, Ibaraki ken
+Sama, Saihaku gun daisen cho, Tottori ken
+Yubetsucho, Suttsu gun suttsu cho, Hokkaido
+Nitsutazukacho, Fukui shi, Fukui ken
+Kanzaki, Yamagata shi, Gifu ken
+Kinoshitacho, Fukui shi, Fukui ken
+Yamoto, Mobara shi, Chiba ken
+Dogashinden, Kitakambara gun seiro machi, Niigata ken
+Higashitsukaguchicho, Amagasaki shi, Hyogo ken
+Matsue, Soka shi, Saitama ken
+Murasakino sekiryucho, Kyoto shi kita ku, Kyoto fu
+Ushiwata, Futaba gun namie machi, Fukushima ken
+Azodani, Yamagata gun akiota cho, Hiroshima ken
+Maeda, Ebino shi, Miyazaki ken
+Seki, Kawasaki shi tama ku, Kanagawa ken
+Raichozawa, Nakaniikawa gun tateyama machi, Toyama ken
+Kutcharokohan, Esashi gun hamatombetsu cho, Hokkaido
+Mitoyo, Tomamae gun tomamae cho, Hokkaido
+Okazaki shi, Aichi ken
+Higashikojimachi, Isahaya shi, Nagasaki ken
+Maruyamadai, Kawanishi shi, Hyogo ken
+Mototamayacho, Omihachiman shi, Shiga ken
+Tamehigashimachi, Toyohashi shi, Aichi ken
+Nagashima, Tomamae gun tomamae cho, Hokkaido
+Miyashiro, Mikata gun mihama cho, Fukui ken
+Futatsuyacho, Fukui shi, Fukui ken
+Neyakitamachi, Neyagawa shi, Osaka fu
+Wada, Toyama shi, Toyama ken
+Nakakubo, Takaoka gun yusuhara cho, Kochi ken
+Kitashirakawa nakayamacho, Kyoto shi sakyo ku, Kyoto fu
+Momponai, Nakagawa gun bifuka cho, Hokkaido
+Hinomikomachi, Hakusan shi, Ishikawa ken
+Nakada, Awaji shi, Hyogo ken
+Narukonsen washinosu, Osaki shi, Miyagi ken
+Kogawacho, Nagoya shi chikusa ku, Aichi ken
+Hokoramine, Chita gun taketoyo cho, Aichi ken
+Kando, Yatomi shi, Aichi ken
+Katano, Katori shi, Chiba ken
+Sohamamachi, Nanao shi, Ishikawa ken
+Mihotamachi kawata, Koriyama shi, Fukushima ken
+Wakkanai shi, Hokkaido
+Kakuno, Ono shi, Fukui ken
+Kisakatamachi yosumiike, Nikaho shi, Akita ken
+Koromogawaku ozaka, Oshu shi, Iwate ken
+Kinomeda, Yamagata shi, Yamagata ken
+Hamasaroma, Tokoro gun saroma cho, Hokkaido
+Kanshuji maruyamacho, Kyoto shi yamashina ku, Kyoto fu
+Matsuyamachisumiyoshi, Osaka shi chuo ku, Osaka fu
+Nishinohamamachi, Karatsu shi, Saga ken
+Tomego, Higashisonogi gun higashisonogi cho, Nagasaki ken
+Ushirohibocho shimmeino, Konan shi, Aichi ken
+Morinomiya, Kasuya gun shingu machi, Fukuoka ken
+Iwazakicho, Sano shi, Tochigi ken
+Obu shi, Aichi ken
+Numa, Arida gun aridagawa cho, Wakayama ken
+Ushikuma, Sambu gun yokoshibahikari machi, Chiba ken
+Hosaka yashiki, Yama gun nishiaizu machi, Fukushima ken
+Kutandamachi, Suzaka shi, Nagano ken
+Miyagotsu, Onuma gun aizumisato machi, Fukushima ken
+Konikaimachi, Himeji shi, Hyogo ken
+Koryohigashimachi, Sakai shi sakai ku, Osaka fu
+Minamiimazucho, Fukuyama shi, Hiroshima ken
+Daimachi, Nagaoka shi, Niigata ken
+Sakaecho, Niigata shi nishikan ku, Niigata ken
+Kamitanabecho, Takatsuki shi, Osaka fu
+Osakacho yuya, Gero shi, Gifu ken
+Aikogo, Minamimatsura gun shinkamigoto cho, Nagasaki ken
+Jumonjicho, Kyoto shi shimogyo ku, Kyoto fu
+Kyowa, Abashiri gun tsubetsu cho, Hokkaido
+Tangocho nombara, Kyotango shi, Kyoto fu
+Kusumoto, Wakayama shi, Wakayama ken
