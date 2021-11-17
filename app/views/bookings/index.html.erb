@@ -14,9 +14,9 @@
       <%= link_to item_path(Item.find(booking.item_id)), class: "list-group-item list-group-item-action active" do %>
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1"><%= Item.find(booking.item_id).title.capitalize %></h5>
-            <small><%= pluralize((Time.now - booking.created_at).to_i/86400.ceil, "day") %> ago</small>
+            <small>Requested: <%= pluralize((Time.now - booking.created_at).to_i/86400.ceil, "day") %> ago</small>
           </div>
-          <p class="mb-1 text-center"><%= booking.start_date %>&nbsp;&nbsp;~&nbsp;&nbsp;<%= booking.end_date %></p>
+          <p class="mb-1 text-center"><%= (booking.start_date).strftime("%A, %b %d") %>&nbsp;&nbsp;~&nbsp;&nbsp;<%= (booking.end_date).strftime("%A, %b %d") %></p>
           <div class="d-flex justify-content-between">
           <p class="mb-1">Item price per day:</p>
           <p class="mb-1">¥ <%= number_with_delimiter(Item.find(booking.item_id).price_per_day, delimiter: ',') %></p>
