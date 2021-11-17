@@ -4,7 +4,7 @@
   <li class="nav-item mr-4"><h2><%= link_to "Listings", items_path %></h2></li>
   </ul>
 </div>
-
+<% if @bookings.exists? %>
 <div class="container">
 <div class="row">
   <div class="col-6 offset-3">
@@ -40,6 +40,12 @@
     </div>
   </div>
 </div>
+<% else %>
+<div class="container m-2">
+  <h1>No bookings yet 😥....</h1>
+  <h2>You can go back to listings and make your first booking!</h2>
+</div>
+<% end %>
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
   <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
   <a data-dismiss="alert" aria-label="Close">
