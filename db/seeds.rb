@@ -14,7 +14,7 @@ guest = User.create!(first_name: "Dirk", last_name: "Dirkinson", email: "honorab
 # file_data = file.readlines.map(&:chomp)
 # addresses = file_data.split
 # file.close
-addresses = File.read("db/seed_helpers/fake_addresses.txt").split
+addresses = File.read("db/seed_helpers/fake_addresses.txt").split("\n")
 
 File.foreach("db/seed_helpers/accessories.txt") do |line|
   price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a

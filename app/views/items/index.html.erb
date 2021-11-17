@@ -1,4 +1,9 @@
-<div class="navbar-plow"><h1>Items</h1></div>
+<div class="navbar navbar-expand-sm navbar-plow">
+  <h1>PLOW</h1>
+  <ul class="navbar-nav">
+  <li class="nav-item mr-4"><h2><%= link_to "My Rentals", bookings_path %></h2></li>
+  </ul>
+</div>
 
 <div class="container">
   <div class="grid">
@@ -15,7 +20,7 @@
                 <div class="card-info">
                   <div>
                     <p>Size: <strong><%= item.size %></strong></p>
-                    <p><strong><%= item.condition %></strong></p>
+                    <p><%= item.condition %></p>
                   </div>
                   <div class="card-price">
                     <p>Price per day:</p>
