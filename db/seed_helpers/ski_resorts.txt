@@ -22,7 +22,6 @@ Nakafurano Hokusei Ski Area
 Nayoro Piyashiri Ski Area
 Otoi Fuji Ski Area
 Pippu Ski Area
-Santa Present Park Mallows Gelände
 Shibetsu City Hinata Ski Area
 Shirogane Ski Highland Park Hill Valley
 Tōma Town Ski Area
@@ -75,7 +74,6 @@ Hidaka Kokusai Ski Area
 Ishikari Subprefecture
 Atsuta Village Ski Area
 Eniwa City Ski Area
-Fu's Snow Area
 Hamamasu Village Ski Area
 Ishikari Heigen Skiing Ground
 Kōrakuen Kitahiroshima Ski Land
@@ -112,7 +110,6 @@ Muroran Kōgen Danpara Ski Area
 Noboribetsu Kōgen Karls Onsen Sanlaiva
 Orofure Ski Area
 Windsor Snow Village
-Oshima Subprefecture
 Greenpia Ōnuma Ski Area
 Hakodate Nanae Ski Area
 Niyama Kōgen Ski Area
@@ -132,13 +129,10 @@ Naqua Shirakami Ski Resort
 Ōwani Onsen Ski Area
 Shichinohe Town Ski Area
 Sōma Romantopia Ski Area
-Takko 229 Ski Land
 Tōō Ski Area
 Towadako Onsen Ski Area
 Yagoshiyama Skiing Area
-Iwate Prefecture
 Appi Kogen Ski Resort
-Getō Kōgen Ski Area in August
 Amihari Onsen Ski Area
 Appi Kogen Ski Resort
 Getō Kōgen Ski Area
@@ -148,11 +142,10 @@ Hayasaka Kōgen Snow Land
 Himekayu Ski Area
 Iwate Kōgen Snowpark
 Iwayama Park Land Ski Area
-Kunimidaira Ski Area
 Matsurube Snow Park
 Morioka Highland Ski Area
 Nishiwaga Town Yuda Ski Area
-Okunakayama Kōgen Ski Area
+Okunakayama Kōgen
 Ōshū City Koeji Ski Area
 Shizukuishi Ski Area
 Tōno City Akahane Ski Area
@@ -172,7 +165,7 @@ Chōkai Okojo Land Ski Area
 Hanawa Ski Area
 Jeunesse Kurikoma Ski Slope
 Kyōwa Ski Area
-National Park Resort Villages Nyūtō Ski Area
+Nyūtō Ski Area
 Ōmagari Family Ski Area
 Snow World Tazawa
 Taiheizan Ski Area Opas
@@ -185,7 +178,7 @@ Crico International Ski Area
 Gassan Ski Area
 Hagurosan Ski Area
 Kamuro Ski Area
-Kurobushi Kōgen Snow Park Jangle Jungle
+Kurobushi Kōgen Snow Park
 Matsuyama Ski Area
 Omoshiroyama Kōgen Ski Park
 Satoyama Ski Area
@@ -197,7 +190,6 @@ Yonezawa Ski Area
 Yudonosan Ski Area
 Zaō Liza Ski World
 Zaō Sarukura Ski Area
-Fukushima Prefecture
 Adatara Kōgen Ski Resort
 Aizu Kōgen Daikura Ski Area
 Aizu Kōgen Nangō Ski Area
@@ -238,7 +230,7 @@ Hotaka Bokujō Ski Area
 Katashina Kōgen Ski Area
 Kawaba Ski Area
 Kazawa Snow Area
-Kusatsu Kokusai Snow & Spa Resort
+Kusatsu Kokusai Snow
 Kusatsu Ongaku no Mori Ski Area
 Malnuma Kōgen Ski Area
 Manza Onsen Ski Resort
@@ -252,7 +244,6 @@ Okutone Snow Park
 Omote Manza Snow Park
 Palcall Tsumagoi Ski Area
 President Snow Park Karuizawa
-Sayama Ski & Snowboard
 Shiki no Mori White World Oze Iwakura
 Snow Par Ogna Hotaka
 Snow Park Oze Tokura
@@ -263,8 +254,6 @@ Budō Ski Area
 Centleisure Maiko Snow Resort
 Charmant Hiuchi Ski Resort
 Chateau Shiosawa Ski Area
-Cupid Valley (New Owners 2020/21) [2]
-First Ishiuchi Ski Area
 Fuyudorigoe Ski Garden
 Gala Yuzawa Snow Resort
 Garuru Takayanagi Ski Area
@@ -293,7 +282,6 @@ Mountain Park Tsunan Ski Area
 Mt. Grand View Ski Area
 Mt. Naeba
 Kagura Ski Resort
-Naeba Ski Resort – With the longest aerial lift in Japan, 5.5 kilometres (3.4 mi).
 Muikamachi Hakkaisan Ski Area
 Muikamachi Minami Ski Area
 Ikenotaira Onsen Ski Area
@@ -302,8 +290,6 @@ Seki Onsen Ski Area
 Myōkō Ski Park
 Kurohime Kōgen Snow Park
 Madarao Kōgen Ski Area
-Madarao Kōgen Sympathique Ski Area (Closed 2018) [5]
-Madarao Kōgen Toyota Ski Area (Closed 2015) [5]
 Tangram Ski Circus
 Nagaoka City Ski Area
 Nagaoka Country Club Ski Area
@@ -322,7 +308,6 @@ Oku Tadami Maruyama Ski Area
 Pine Ridge Resorts Kandatsu Ski Area
 Sportscom Urasa Kokusai Ski Area
 Sugihara Ski Area
-Tainai Ski Area (Closed 2020)
 Tochio Family Ski Area
 Tōkamachi City Matsudai Family Ski Area
 Tōkamachi City Ski Area
@@ -404,7 +389,6 @@ Hijiri Kōgen Ski Area
 Hijiriyama Panorama Ski Area
 Hiraya Kōgen Akasaka Ski Area
 Hokuryūko Family Ski Area
-Iizuna Kogen Ski Area (Closed 2020)
 Iizuna Resort Ski Area
 Jibuzaka Kōgen Ski Area
 Jiigatake Ski Area
@@ -422,16 +406,13 @@ Koumi Ri-Ex Ski Valley
 Kurohime Kōgen Snow Park
 Kurumayama Kōgen Snow Resort
 Madarao Kōgen Ski Area
-Madarao Kōgen Sympathique Ski Area (Closed 2018) [5]
-Madarao Kōgen Toyota Ski Area (Closed 2015) [5]
 Makinoiri Snow Park
 Minenohara Kōgen Ski Area
 Norikura Kōgen Igaya Ski Area
-Norikura Kōgen Snow + Spa Resort
+Norikura Kōgen Snow
 Nozawa Onsen Snow Resort
 Ōmachi Ski Area
 Ontake Ropeway Ski Area
-Ontake 2240
 Pilatus Tateshina Ski Resort
 Prince Snow Resort Karuizawa
 Racing Camp Nobeyama
@@ -440,12 +421,10 @@ Sakae Club Ski Area
 Saku Ski Garden Parada
 Senjōjiki Ski Area
 Shiga Kōgen Ski Resort
-Hasuike / Maruike / Sun Valley area:
 Giant Ski Area
 Hasuike Ski Area
 Maruike Ski Area
 Sun Valley Ski Area
-Higashitateyama / Ichinose / Takamagahara area:
 Higashitateyama Ski Area
 Ichinose Diamond Ski Area
 Ichinose Family Ski Area
@@ -454,19 +433,13 @@ Nishitateyama Ski Area
 Takamagahara Mammoth Ski Area
 Tanne no Mori Okojo Ski Area
 Terakoya Ski Area
-Okushiga Kōgen / Yakebitaiyama area:
-Okushiga Kōgen Ski Area
-Yakibitaiyama Ski Area
-Kumanoyu / Shibutōge / Yokoteyama area:
 Kasadake Ski Area
 Kidoike Ski Area
 Kumanoyu Ski Area
 Maeyama Ski Area
 Shibutōge Ski Area
 Yokoteyama Ski Area
-Shiga Kōgen is the largest ski resort complex in Japan, 4.25 square kilometres (1.64 sq mi), 85 courses.
 Shinshū Matsumoto Nomugitōge Ski Area
-Shirakaba 2 in 1 Ski Area
 Shirakaba Kōgen Kokusai Ski Area
 Shirakaba Resort Ski Area
 Shirakabako Royal Hill
@@ -510,7 +483,6 @@ Outdoor Inn Motai
 Shirakawagō Hirase Onsen Shiroyumi Ski Area
 Shirao Ski Area
 Shōkawa Kōgen Ski Area
-Snova Hashima (Indoor)
 Snow Wave Park Shiratori Kōgen
 Star Spure Ryokufū Resort Hida Nagareha
 Takasu Snow Park
@@ -519,7 +491,7 @@ White Pia Takasu
 Winghills Shirotori Resort
 Youland Sakauchi
 Gozaisho Ski Area
-Hakodateyama ski resort, Shiga
+Hakodateyama ski resort
 Akagoyama Ski Area
 Berg Yogo
 Biwako Valley
@@ -545,7 +517,6 @@ Nashiki Ski Area
 Oku Kannabe Ski Area
 Up Kannabe Ski Area
 Mikata Snow Park
-Mt. Rokkō Artificial Snow Area
 Shin Tokura Ski Area
 Sky Valley Ski Area
 Tajima Bokujō Kōen Ski Area
@@ -591,12 +562,9 @@ Tokusagamine Ski Area
 Rakanzan Highland
 Shikoku region
 Snow Park Unpenji
-Tokushima Prefecture
 Ikawa Ski Area Kainayama
 Kenzan Ski Area
 Ehime Prefecture
 Ishizuchi Ski Area
 Kuma Ski Land
 Mikawa Ski Area
-Salega Land Plana
-Sol-Fa Oda Ski Gelände

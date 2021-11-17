@@ -30,5 +30,5 @@ class Item < ApplicationRecord
   validates :location, presence: true
   validates :price_per_day, presence: true, format: { with: /\A\d+(?:\.\d{2})?\z/ }, numericality: { greater_than: 0, less_than: 10000 }
   validates :size, presence: true
-  validates :title, presence: true, length: { in: 4..50 }, format: { with: /\A[a-zA-Z\s]+\z/, message: "only allows letters" }
+  validates :title, presence: true, length: { in: 4..50 }, format: { with: /\A[0-9a-zA-Z\s]+\z/, message: "only allows letters" }
 end
