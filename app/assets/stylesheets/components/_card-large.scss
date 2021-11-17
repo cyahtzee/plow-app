@@ -4,7 +4,7 @@
   overflow: hidden;
   background: $snow;
   padding: 8px;
-  margin: 8px 0;
+  margin: 4px 0;
   border-radius: 2px;
   box-shadow: 0 0 1px rgba(0,0,0,0.2);
   background-image: asset-url("plow-card-background.png");
@@ -18,7 +18,6 @@
   }
   h3 {
     padding: 8px;
-    border-radius: 8px;
     text-shadow: 0 0 2px $snow;
     font-size: 1.2rem;
   }
@@ -26,6 +25,22 @@
     text-shadow: 0 0 2px $snow;
     margin-bottom: 0.4rem;
     font-size: 0.8rem;
+  }
+  .card-user {
+  position: absolute;
+  right: 12px;
+  top:  12px;
+  width: 40px;
+  transition: 1s;
+  }
+  .card-textbox {
+  padding: 8px;
+  }
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
   }
 }
 
@@ -58,42 +73,13 @@ border-radius: 2px;
   border-radius: 4px;
   transition: 1s;
 }
-.card-user {
-  position: absolute;
-  right: 12px;
-  top:  12px;
-  width: 40px;
-  transition: 1s;
-}
-.card-textbox {
-  padding: 8px;
-}
-.card-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 100px;
-}
+
 .card-price {
   display: flex;
   flex-direction: column;
   p {
     font-size: 0.8rem;
-    font-weight: lighter;
-    color: $gray;
-  }
-}
-
-.card-xl {
-  background: $light-gray;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
-  h4 {
-    margin-bottom: 0;
-    padding: 0 24px;
-  }
-  p {
-    margin-bottom: 0;
-    padding: 0 24px;
+    color: $blue-black;
+    text-shadow: 0 0 1px $snow;
   }
 }

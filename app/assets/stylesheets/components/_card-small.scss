@@ -1,0 +1,27 @@
+.card-small {
+  position: relative;
+  width: 128px;
+  overflow: hidden;
+  background: $light-frost;
+  padding: 4px;
+  margin: 4px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  opacity: 0.8;
+  h2 {
+    margin-bottom: 0rem;
+    color: $dark-blue;
+    text-shadow: 0 0 2px $snow;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  p {
+    text-shadow: 0 0 2px $snow;
+    margin-bottom: 0rem;
+    font-size: 0.6rem;
+  }
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}
