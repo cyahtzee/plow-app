@@ -1,16 +1,10 @@
-
-
 <%= link_to item_path(item) do%>
-  <div class="card-large">
-    <img src="<%= cl_image_path item.photo.key, height: 200, width: 234, crop: :fill, class: "item-card-image" %>" alt="Plow item">
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-user avatar"/>
-    <p class="card-item-category"><%= item.category %></p>
+  <div class="card-small">
+    <img src="<%= cl_image_path item.photo.key, height: 80, width: 120, crop: :fill, class: "item-card-image" %>" alt="Plow item">
     <div class="card-textbox">
       <h2><%= item.title.capitalize %></h2>
-      <div class="card-price">
-        <p>Price per day:</p>
-        <h3>¥<%= number_with_delimiter(item.price_per_day, delimter: "," ) %></h3>
-      </div>
+      <p>Price per day:</p>
+      <h2>¥<%= number_with_delimiter(item.price_per_day, delimter: "," ) %></h2>
     </div>
   </div>
 <% end %>
