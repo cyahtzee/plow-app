@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
-      <%= simple_form_for @item do |f| %>
+      <%= simple_form_for item do |f| %>
         <% if current_user.location %>
-          <%= f.simple_fields_for @user do |u| %>
-            <%= u.input :location, { value: @user.location } %>
+          <%= f.simple_fields_for user do |u| %>
+            <%= u.input :location, { value: user.location } %>
           <% end %>
         <% else %>
-          <%= simple_fields_for @user do |u| %>
+          <%= simple_fields_for user do |u| %>
             <%= u.input :location, label: "Address" %>
           <% end %>
         <% end %>
