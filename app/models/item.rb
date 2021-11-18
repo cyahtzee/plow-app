@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
   belongs_to :user
-  has_many :bookings
+  has_many :bookings, dependent: :destroy
   has_one_attached :photo
   accepts_nested_attributes_for :user
   SIZES = ["S", "M", "L", "XL", "XXL"]
