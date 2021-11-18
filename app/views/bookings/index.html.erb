@@ -4,46 +4,23 @@
     <h1>PLOW</h1>
   </div>
   <ul class="navbar-nav">
-  <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
+    <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
   </ul>
 </div>
 <% if @bookings.exists? %>
-<div class="container">
-<div class="row">
-  <div class="col-6 offset-3">
-      <div class="container d-flex flex-column bd-highlight mb-3">
-      <% @bookings.each do |booking| %>
-      <div class="list-group p-2 bd-highlight">
-      <%= link_to item_path(Item.find(booking.item_id)), class: "list-group-item list-group-item-action active" do %>
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1"><%= Item.find(booking.item_id).title.capitalize %></h5>
-            <small>Requested: <%= pluralize((Time.now - booking.created_at).to_i/86400.ceil, "day") %> ago</small>
-          </div>
-          <p class="mb-1 text-center"><%= (booking.start_date).strftime("%A, %b %d") %>&nbsp;&nbsp;~&nbsp;&nbsp;<%= (booking.end_date).strftime("%A, %b %d") %></p>
-          <div class="d-flex justify-content-between">
-          <p class="mb-1">Item price per day:</p>
-          <p class="mb-1">¥ <%= number_with_delimiter(Item.find(booking.item_id).price_per_day, delimiter: ',') %></p>
-          </div>
-          <div class="d-flex justify-content-between">
-          <p class="mb-1">Booking days:</p>
-          <p class="mb-1"><%= (((Date.parse(booking.end_date.to_s) - (Date.parse(booking.start_date.to_s)))).to_i) %>
-          </div>
-          <div class="d-flex justify-content-between">
-          <p class="mb-1">Total booking price:</p>
-          <p class="mb-1">¥ <%= number_with_delimiter(((((Date.parse(booking.end_date.to_s) - (Date.parse(booking.start_date.to_s)))).to_i) * (Item.find(booking.item_id).price_per_day)), delimiter: ',') %></p>
-          </div>
-          <div class="d-flex justify-content-between">
-          <small>Status:</small>
-          <small>Booking is <%= booking.status %></small>
-          </div>
-      <% end %>
-      </div>
-      <% end %>
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div class="container d-flex flex-column bd-highlight mb-3">
+          <% @bookings.each do |booking| %>
+            <%= render "booking", booking: booking %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <% else %>
+
 <div class="container m-2">
   <h1>No bookings yet 😥....</h1>
   <h2>You can go back to listings and make your first booking!</h2>
