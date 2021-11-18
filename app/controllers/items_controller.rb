@@ -12,9 +12,6 @@ class ItemsController < ApplicationController
     end
   end
 
-  # def search
-  # end
-
   def new
     @user = current_user
     @item = Item.new
