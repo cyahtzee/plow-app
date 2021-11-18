@@ -3,8 +3,6 @@ class Item < ApplicationRecord
   has_many :bookings
   has_one_attached :photo
   accepts_nested_attributes_for :user
-  geocoded_by :location, params: { countrycodes: "jp" }
-  after_validation :geocode, if: :will_save_change_to_location?
   SIZES = ["S", "M", "L", "XL", "XXL"]
   SHOESIZES = ["25", "26", "27", "28", "29"]
   LENGTH = ["163", "159", "168", "173", "174", "181", "188"]
@@ -28,7 +26,6 @@ class Item < ApplicationRecord
   CONDITIONS = ["New With Tags", "Excellent Used Condition", "Good Used Condition", "Very Used Condition (Distressed)"]
   validates :condition, presence: true, inclusion: { in: CONDITIONS }
   validates :description, presence: true, length: { maximum: 200 }
-  validates :location, presence: true
   validates :price_per_day, presence: true, format: { with: /\A\d+(?:\.\d{2})?\z/ }, numericality: { greater_than: 0, less_than: 10000 }
   validates :size, presence: true
   validates :title, presence: true, length: { in: 4..50 }, format: { with: /\A[0-9a-zA-Z\s]+\z/, message: "only allows letters" }

@@ -1,3 +1,5 @@
+<%
+=begin %>
 <%= link_to item_path(item) do%>
   <div class="card-small">
     <img src="<%= cl_image_path item.photo.key, height: 80, width: 120, crop: :fill, class: "item-card-image" %>" alt="Plow item">
@@ -8,3 +10,5 @@
     </div>
   </div>
 <% end %>
+<%
+=end %>

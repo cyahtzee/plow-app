@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-8 offset-2">
       <%= simple_form_for @item do |f| %>
-        <% unless current_user.location %>
+        <% if current_user.location %>
+          <%= f.simple_fields_for @user do |u| %>
+            <%= u.input :location, { value: current_user.location } %>
+          <% end %>
+        <% else %>
           <%= simple_fields_for @user do |u| %>
             <%= u.input :location, label: "Address" %>
           <% end %>

@@ -1,12 +1,13 @@
 class ItemsController < ApplicationController
   def index
     @items = policy_scope(Item)
+    @users = User.all
 
-    @markers = @items.geocoded.map do |item|
+    @markers = @users.geocoded.map do |user|
       {
-        lat: item.latitude,
-        lng: item.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { item: item })
+        lat: user.latitude,
+        lng: user.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { item: user })
       }
     end
   end
@@ -22,9 +23,9 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    @item.location = current_user.location
+    @item.user = current_user
+    current_user.update(user_params)
     authorize @item
-    raise
     if @item.save
       redirect_to item_path(@item)
     else
@@ -37,21 +38,23 @@ class ItemsController < ApplicationController
     @booking = Booking.new
     @user = User.find(@item.user_id)
     authorize @item
-    @items = Item.near([@item.latitude, @item.longitude], 50)
-    @markers = @item && @items.map do |item|
+    @users = User.near([@item.user.latitude, @item.user.longitude], 50)
+    @markers = @user && @users.map do |user|
       {
-        lat: item.latitude,
-        lng: item.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { item: item })
+        lat: user.latitude,
+        lng: user.longitude
+        # info_window: render_to_string(partial: "info_window", locals: { item: user })
       }
     end
   end
-  # We have routes for new & create but not part of the initial core journey
-  # Need to add strong params for create
 
   private
 
   def item_params
-    params.require(:item).permit(:photo, :title, :price_per_day, :condition, :size, :category, :description, user_attributes: [:location])
+    params.require(:item).permit(:photo, :title, :price_per_day, :condition, :size, :category, :description)
+  end
+
+  def user_params
+    params.require(:item).require(:user).permit(:location)
   end
 end
