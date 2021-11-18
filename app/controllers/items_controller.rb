@@ -21,6 +21,7 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     @item.user = current_user
+    @user = current_user
     current_user.update(user_params)
     authorize @item
     if @item.save
