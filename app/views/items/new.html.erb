@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <%= simple_form_for @item do |f| %>
+        <% unless current_user.location %>
+          <%= simple_fields_for @user do |u| %>
+            <%= u.input :location, label: "Address" %>
+          <% end %>
+        <% end %>
+        <%= f.input :title, label: "Rent item" %>
+        <%= f.input :category, as: :select, collection: Item::CATEGORIES, label: "Category" %>
+        <%= f.input :condition, as: :select, collection: Item::CONDITIONS, label: "Condition" %>
+        <%= f.input :size, label: "Size" %>
+        <%= f.input :price_per_day, label: "Price per Day" %>
+        <%= f.input :description, as: :text, label: "Few words about an item" %>
+        <%= f.input :photo, as: :file, label: "Upload a photo" %>
+        <%= f.submit "Rent Out" %>
+      <% end %>
+    </div>
+  </div>
+</div>

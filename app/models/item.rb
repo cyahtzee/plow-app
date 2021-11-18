@@ -2,6 +2,7 @@ class Item < ApplicationRecord
   belongs_to :user
   has_many :bookings
   has_one_attached :photo
+  accepts_nested_attributes_for :user
   geocoded_by :location, params: { countrycodes: "jp" }
   after_validation :geocode, if: :will_save_change_to_location?
   SIZES = ["S", "M", "L", "XL", "XXL"]
