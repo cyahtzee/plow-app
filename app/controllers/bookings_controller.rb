@@ -10,17 +10,23 @@ class BookingsController < ApplicationController
     @booking.item_id = params[:item_id]
     authorize @booking
     if @booking.save
-      @booking.update! status: 2
-      # Commenting out for modal to works, otherwise it overlaps
+      # Commenting out for modal to works, otherwise it overlaps.
       # redirect_to items_path
     else
-      render 'items/show.html.erb'
+      render "items/show.html.erb"
     end
+  end
+
+  def update
+    @booking = Booking.find(params[:id])
+    authorize @booking
+    @booking.update(booking_params)
+    redirect_to :bookings
   end
 
   private
 
   def booking_params
-    params.require(:booking).permit(:item_id, :user_id, :start_date, :end_date)
+    params.require(:booking).permit(:item_id, :user_id, :start_date, :end_date, :status)
   end
 end

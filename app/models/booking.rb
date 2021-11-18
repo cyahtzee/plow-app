@@ -1,9 +1,13 @@
 class Booking < ApplicationRecord
   belongs_to :user
   belongs_to :item
-  enum status: [:available, :reserved, :pending]
+  enum status: [:pending, :accepted, :rejected]
   validates :start_date, :end_date, presence: true
   validate :end_date_after_start_date
+
+  def pending?
+    status == 'pending'
+  end
 
   private
 
@@ -11,7 +15,7 @@ class Booking < ApplicationRecord
     return if end_date.blank? || start_date.blank?
 
     if end_date < start_date
-      errors.add(:end_date, "must be after the start date")
+      errors.add(:end_date, "must be after the start date.")
     end
   end
 end
