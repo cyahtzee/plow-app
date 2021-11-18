@@ -1,10 +1,10 @@
 .card-small {
   position: relative;
-  width: 128px;
+  width: 90px;
   overflow: hidden;
   background: $light-frost;
   padding: 4px;
-  margin: 4px 0;
+  margin: 2px;
   border-radius: 2px;
   box-shadow: 0 0 1px rgba(0,0,0,0.2);
   opacity: 0.8;
@@ -19,6 +19,15 @@
     text-shadow: 0 0 2px $snow;
     margin-bottom: 0rem;
     font-size: 0.6rem;
+  }
+  .card-textbox {
+  padding: 2px;
+  }
+  .marker-category{
+  color: $dark-blue;
+  background-color: $snow;
+  border-radius: 4px;
+  margin: 2px 0;
   }
 }
 
