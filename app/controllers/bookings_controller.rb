@@ -11,7 +11,8 @@ class BookingsController < ApplicationController
     authorize @booking
     if @booking.save
       @booking.update! status: 2
-      redirect_to items_path
+      # Commenting out for modal to works, otherwise it overlaps
+      # redirect_to items_path
     else
       render 'items/show.html.erb'
     end
