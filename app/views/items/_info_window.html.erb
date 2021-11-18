@@ -1,14 +1,10 @@
-<%
-=begin %>
-<%= link_to item_path(item) do%>
-  <div class="card-small">
-    <img src="<%= cl_image_path item.photo.key, height: 80, width: 120, crop: :fill, class: "item-card-image" %>" alt="Plow item">
-    <div class="card-textbox">
-      <h2><%= item.title.capitalize %></h2>
-      <p>Price per day:</p>
-      <h2>¥<%= number_with_delimiter(item.price_per_day, delimter: "," ) %></h2>
-    </div>
+
+<div class="card-small">
+  <%= cl_image_tag(user.photo.key, class: "card-user avatar-small") %>
+  <h2><%= user.first_name %></h2>
+  <div class="card-textbox">
+    <% user.items.each do |item| %>
+      <p class="marker-category"><%= item.category %></p>
+    <% end %>
   </div>
-<% end %>
-<%
-=end %>
+</div>
