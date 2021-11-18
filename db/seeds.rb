@@ -3,21 +3,25 @@ require 'open-uri'
 puts("deleting items...")
 puts("deleting users...")
 puts("creating admins")
+Booking.destroy_all
 Item.destroy_all
 User.destroy_all
-User.create!(first_name: "Matias", last_name: "Acuna", email: "agroang@gmail.com", password: "1234567")
-User.create!(first_name: "Ryan", last_name: "Johnson", email: "ryan.a.y.johnson@gmail.com", password: "1234567")
-User.create!(first_name: "Kostya", last_name: "Yatsenko", email: "moahtdeep@gmail.com", password: "1234567")
-guest = User.create!(first_name: "Dirk", last_name: "Dirkinson", email: "honorable_user91@gmail.com", password: "1234567")
+user1 = User.create!(first_name: "Matias", last_name: "Acuna", email: "agroang@gmail.com", password: "1234567")
+file1 = URI.open("https://avatars.githubusercontent.com/u/79890025?v=4")
+user1.photo.attach(io: file1, filename: 'matias', content_type: 'image/png')
+user2 = User.create!(first_name: "Ryan", last_name: "Johnson", email: "ryan.a.y.johnson@gmail.com", password: "1234567")
+file2 = URI.open("https://avatars.githubusercontent.com/u/36095929?v=4")
+user2.photo.attach(io: file2, filename: 'ryan', content_type: 'image/png')
+user3 = User.create!(first_name: "Kostya", last_name: "Yatsenko", email: "moahtdeep@gmail.com", password: "1234567")
+file3 = URI.open("https://avatars.githubusercontent.com/u/33479806?v=4")
+user3.photo.attach(io: file3, filename: 'kostya', content_type: 'image/png')
 
-# file = File.open("db/fake_addresses.txt")
-# file_data = file.readlines.map(&:chomp)
-# addresses = file_data.split
-# file.close
+file = File.read("db/seed_helpers/avatars.txt").split("\n")
 users = File.read("db/seed_helpers/fake_addresses.txt").split("\n").map do |address|
-  User.create!(location: address, last_name: Faker::Name.last_name, first_name: Faker::Name.first_name, email: Faker::Internet.email, password: "1234567")
+  user = User.create!(location: address, last_name: Faker::Name.last_name, first_name: Faker::Name.first_name, email: Faker::Internet.email, password: "1234567")
+  user.photo.attach(io: URI.open(file.sample), filename: user.first_name, content_type: 'image/png')
+  user
 end
-
 
 File.foreach("db/seed_helpers/accessories.txt") do |line|
   price = (300..1500).step((100..1000).to_a.sample.floor(-2)).to_a
