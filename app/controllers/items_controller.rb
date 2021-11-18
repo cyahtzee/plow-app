@@ -2,6 +2,19 @@ class ItemsController < ApplicationController
   def index
     @items = policy_scope(Item)
     @users = User.all
+    ####
+    if params[:start].present? && params[:end].present?
+      @id_array = []
+      @items.each do |item|
+        item.bookings.each do |booking|
+          if date_unavailable?(booking) && booking.status == "accepted"
+            @id_array << booking.item_id
+          end
+        end
+      end
+      @items = Item.where.not(id: @id_array)
+    end
+    #####
 
     @markers = @users.geocoded.map do |user|
       {
@@ -47,6 +60,12 @@ class ItemsController < ApplicationController
   end
 
   private
+
+  def date_unavailable?(booking)
+    booking_range = booking.start_date..booking.end_date
+    query_range = Date.parse(params[:start])..Date.parse(params[:end])
+    booking_range.cover?(query_range.begin) && booking_range.cover?(query_range.end)
+  end
 
   def item_params
     params.require(:item).permit(:photo, :title, :price_per_day, :condition, :size, :category, :description)

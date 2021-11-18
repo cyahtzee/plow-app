@@ -11,6 +11,25 @@
   </ul>
 </div>
 
+<!-- Testing search querys -->
+<div class="container">
+      <%= form_tag root_path, method: :get, class: 'd-flex my-5' do %>
+        <%= date_field_tag :start,
+          params[:start],
+          html5: true,
+          class: "form-control"
+        %>
+        <%= date_field_tag :end,
+          params[:end],
+          html5: true,
+          class: "form-control"
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+</div>
+<!-- Testing search querys -->
+
+
 <div class="container d-flex items-space-around">
   <div class="grid">
     <div class="row">
