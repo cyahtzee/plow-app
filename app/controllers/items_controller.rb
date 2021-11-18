@@ -52,6 +52,6 @@ class ItemsController < ApplicationController
   end
 
   def user_params
-    params.require(:item).require(:user).permit(:location)
+    params.require(:user).permit(:location)
   end
 end
