@@ -4,7 +4,7 @@
       <%= simple_form_for @item do |f| %>
         <% if current_user.location %>
           <%= f.simple_fields_for @user do |u| %>
-            <%= u.input :location, { value: current_user.location } %>
+            <%= u.input :location, { value: @user.location } %>
           <% end %>
         <% else %>
           <%= simple_fields_for @user do |u| %>

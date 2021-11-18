@@ -22,7 +22,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     @item.user = current_user
     @user = current_user
-    current_user.update(user_params)
+    current_user.update(user_params) unless current_user.location
     authorize @item
     if @item.save
       redirect_to item_path(@item)
