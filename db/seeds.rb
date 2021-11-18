@@ -17,7 +17,8 @@ guest = User.create!(first_name: "Dirk", last_name: "Dirkinson", email: "honorab
 addresses = File.read("db/seed_helpers/fake_addresses.txt").split("\n")
 
 File.foreach("db/seed_helpers/accessories.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (300..1500).step((100..1000).to_a.sample.floor(-2)).to_a
+
   titles = ['Mitts', "5 finger", "Gloves", 'Padded gloves']
   descriptions = ['Look a bit old but in great condition', 'Will keep you warm and dry at any cost', "Good realiable brand. I only used those for one season"]
   item = Item.new(category: "Accessories", condition: Item::CONDITIONS.sample, price_per_day: price.sample)
@@ -34,7 +35,7 @@ File.foreach("db/seed_helpers/accessories.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/binding.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..3000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   item = Item.new(category: "Bindings", condition: Item::CONDITIONS.sample, price_per_day: price.sample)
   titles = ['Snowboard bindings', "Adjustible bindings", "Bindings"]
@@ -52,7 +53,7 @@ File.foreach("db/seed_helpers/binding.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/headwear.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (300..3000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Men's Helmet", "Women's helmet", "Kid's helmet", 'Wall breaker']
   descriptions = ["protects you from the cold and keep you safe.", "Helmet is a very important item on your list.", "Don't ruin your vacation, helmet can save your life.", 'Brand new with th latest safety technologies included.']
@@ -70,7 +71,7 @@ File.foreach("db/seed_helpers/headwear.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/jackets.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..3000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Light duke", "Wind breaker", "Ak Junior", "Shredder", "Flaker", "Snowhite", "Rolling deep"]
   descriptions = ["Protects you from the cold and keep you dry no matter what you do.", "Durable and sturdy. Padded outwear with many pockets", "Lightweight and doesn't restrict the movements"]
@@ -88,7 +89,7 @@ File.foreach("db/seed_helpers/jackets.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/poles.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..4000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Light duke", "Wind breaker", "Ak Junior", "Shredder", "Flaker", "Snowhite", "Rolling deep"]
   descriptions = ["Collapseable pair of poles.", "Adjustable poles.", "A litle old but still work very well.", "Get skis and get poles on the house."]
@@ -106,7 +107,7 @@ File.foreach("db/seed_helpers/poles.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/snowboard_boots.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..5000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Light duke", "Brown wing", "Grey wizzard", "Snoop", "Stripes", "", "Walker"]
   descriptions = ["Custom Fit Liner – Heat moldable Ultralon foam liners with strategically placed multidensity foams for heel retention.", "Imprint – This boot features a high comfort and long-lasting insole.", "D-Light Outsole – Lightweight and ultra-low profile, this full EVA D-Light Outsole features extra gridding under the feet for added comfort and damping right where you need it."]
@@ -124,7 +125,7 @@ File.foreach("db/seed_helpers/snowboard_boots.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/snowboard.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..5000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Flight atander", "Shredder", "Widow maker", "Black crows", "Yellow wings", "El Diablo"]
   descriptions = ["Good all rounder, freat performance on piste.", "Good on piste, a bit heavy for the deeper snow.", "Because sometimes the best backcountry experiences come with mixed conditions and unexpected terrain, you need a board that rises to every challenge.", "From floating through open powder stashes to working through variable conditions, its versatility shines bright no matter where you wind up.", "The flat, ultra-thin, and skate-like profile improves the ride, thanks to Filet-O-Flex design, yet rips harder than any soft board out there."]
@@ -142,7 +143,7 @@ File.foreach("db/seed_helpers/snowboard.txt") do |line|
 end
 
 File.foreach("db/seed_helpers/ski.txt") do |line|
-  price = (1000..10000).step((100..1000).to_a.sample.floor(-2)).to_a
+  price = (500..5000).step((100..1000).to_a.sample.floor(-2)).to_a
 
   titles = ["Flight atander", "Shredder", "Widow maker", "Black crows", "Yellow wings", "El Diablo"]
   descriptions = ["The new Salomon Aira 84 Ti is a fantastic option for aggressive skiing women who will spend the majority of their time on the frontside of the mountain.", "A Ti Power Zone adds extra rigidity underfoot and more power.", "A Semi Sandwich Sidewall gives a perfect blend of torsional rigidity and flex for intermediate riders who are still learning to push into the ski to get the most out of it.", "An awesome option for intermediate to advanced level ladies looking for a solid frontside ski for all day fun on the mountain."]
