@@ -1,8 +1,10 @@
 <div class="navbar navbar-expand-sm navbar-plow">
+<%= link_to items_path do %>
   <div class="d-flex">
     <%= image_tag "plow-logo.png", class: "logo-plow" %>
     <h1>PLOW</h1>
   </div>
+<% end %>
   <ul class="navbar-nav">
     <li class="nav-item mr-4">
       <h2><%= link_to "All Listings", items_path %></h2>
