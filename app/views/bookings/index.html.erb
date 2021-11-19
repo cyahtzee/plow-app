@@ -9,7 +9,7 @@
     <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
   </ul>
 </div>
-<% if @bookings.exists? %>
+<% if @bookings.any? %>
   <div class="container">
     <div class="row">
       <div class="col-10 offset-1">

@@ -2,19 +2,8 @@ class ItemsController < ApplicationController
   def index
     @items = policy_scope(Item)
     @users = User.all
-    # Filter by location
-    if params[:start].present? && params[:end].present?
-      @id_array = []
-      @items.each do |item|
-        item.bookings.each do |booking|
-          if date_unavailable?(booking) && booking.status == "accepted"
-            @id_array << booking.item_id
-          end
-        end
-      end
-      @items = Item.where.not(id: @id_array)
-    end
-    # Add markers to map
+    filter_dates
+    filter_categories
     create_markers
   end
 
@@ -53,6 +42,27 @@ class ItemsController < ApplicationController
   end
 
   private
+
+  def filter_dates
+    if params[:start].present? && params[:end].present?
+      @id_array = []
+      @items.each do |item|
+        item.bookings.each do |booking|
+          if date_unavailable?(booking) && booking.status == "accepted"
+            @id_array << booking.item_id
+          end
+        end
+      end
+      @items = Item.where.not(id: @id_array)
+    end
+  end
+
+  def filter_categories
+    if params[:commit].present?
+      category = params[:commit]
+      @items = Item.where(category: category)
+    end
+  end
 
   def date_unavailable?(booking)
     booking_range = booking.start_date..booking.end_date
