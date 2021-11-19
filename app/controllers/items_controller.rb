@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
   def index
+    @user = User.new
+    @item = Item.new
     @items = policy_scope(Item)
     @users = User.all
     filter
@@ -7,7 +9,7 @@ class ItemsController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = current_user
     @item = Item.new
     authorize @item
   end
@@ -16,7 +18,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     @item.user = current_user
     @user = current_user
-    current_user.update(user_params) unless current_user.location
+    current_user.update(user_params) unless current_user.location.present?
     authorize @item
     if @item.save
       redirect_to items_path
@@ -83,10 +85,10 @@ class ItemsController < ApplicationController
   end
 
   def item_params
-    params.require(:item).permit(:photo, :title, :price_per_day, :condition, :size, :category, :description)
+    params.require(:item).permit(:photo, :title, :price_per_day, :condition, :size, :category, :description, user_attributes: [:location])
   end
 
   def user_params
-    params.require(:user).permit(:location)
+    params.require(:item).require(:user).permit(:location)
   end
 end

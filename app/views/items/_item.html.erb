@@ -2,7 +2,11 @@
   <%= link_to item_path(item) do%>
     <div class="card-large">
       <img src="<%= cl_image_path item.photo.key, height: 200, width: 234, crop: :fill, class: "item-card-image" %>" alt="Plow item">
+      <% if item.user.photo.attached? %>
       <%= cl_image_tag(item.user.photo.key, class: "card-user avatar") %>
+      <% else %>
+      <%= image_tag('profile.jpg', class: "card-user avatar") %>
+      <% end %>
       <p class="card-item-category"><%= item.category %></p>
       <div class="card-textbox">
         <h2><%= item.title.capitalize %></h2>
