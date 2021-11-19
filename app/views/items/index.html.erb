@@ -14,9 +14,8 @@
     </li>
   </ul>
 </div>
-<!-- Testing search querys -->
 
-<!-- Search by date -->
+<!-- Search -->
 <div class="container">
   <%= form_tag root_path, method: :get, class: 'd-flex my-5' do %>
     <%= date_field_tag :start,
@@ -29,25 +28,12 @@
           html5: true,
           class: "form-control"
         %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
-</div>
-<!-- Testing search querys -->
-<!-- Search by date -->
-
-<!-- Search by category -->
-<div class="container d-flex">
-  <div class="row mb-1">
-    <%= form_tag root_path, method: :get do%>
-      <% Item::CATEGORIES.each do |category| %>
-        <div class="col-2">
-          <%= submit_tag category, class: "btn btn-primary" %>
-        </div>
+     <%= select_tag :category, options_for_select(Item::CATEGORIES), prompt: "All Items"
+        %>
+      <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
-    <% end %>
-  </div>
 </div>
-<!-- Search by category -->
+<!-- Search -->
 
 <div class="container d-flex items-space-around">
   <div class="grid">
