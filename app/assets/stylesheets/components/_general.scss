@@ -6,6 +6,11 @@ label {
   font-family: $headers-font;
 }
 
+.owner-container {
+  background-color: #D3D3D3;
+  border: 2px solid $snow;
+}
+
 h2 {
     margin-bottom: 0rem;
     color: $dark-blue;
