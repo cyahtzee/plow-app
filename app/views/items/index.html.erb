@@ -15,7 +15,7 @@
   </ul>
 </div>
 
-<!-- Testing search querys -->
+<!-- Search by date -->
 <div class="container">
       <%= form_tag root_path, method: :get, class: 'd-flex my-5' do %>
         <%= date_field_tag :start,
@@ -31,34 +31,30 @@
         <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
 </div>
-<!-- Testing search querys -->
+<!-- Search by date -->
+
+<!-- Search by category -->
+<div class="container d-flex">
+  <div class="row mb-1">
+    <%= form_tag root_path, method: :get do%>
+      <% Item::CATEGORIES.each do |category| %>
+        <div class="col-2">
+          <%= submit_tag category, class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<!-- Search by category -->
 
 <div class="container d-flex items-space-around">
   <div class="grid">
     <div class="row">
+    <div class="col-12">
+      <h3>Listing <%= @items.count %> items available</h3>
+    </div>
       <% @items.each do |item| %>
-        <div class="col">
-          <%= link_to item_path(item) do%>
-            <div class="card-large">
-              <img src="<%= cl_image_path item.photo.key, height: 200, width: 234, crop: :fill, class: "item-card-image" %>" alt="Plow item">
-              <%= cl_image_tag(item.user.photo.key, class: "card-user avatar") %>
-              <p class="card-item-category"><%= item.category %></p>
-              <div class="card-textbox">
-                <h2><%= item.title.capitalize %></h2>
-                <div class="card-info">
-                  <div>
-                    <p>Size: <strong><%= item.size %></strong></p>
-                    <p><%= item.condition %></p>
-                  </div>
-                  <div class="card-price">
-                    <p>Price per day:</p>
-                    <h3>¥<%= number_with_delimiter(item.price_per_day, delimter: "," ) %></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
+        <%= render item %>
       <% end %>
     </div>
   </div>
