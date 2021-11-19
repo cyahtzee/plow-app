@@ -1,0 +1,18 @@
+ <div class="card p-2 card-xl mt-2">
+        <h2 class="text-center"><%= item.title.capitalize %></h2>
+        <div class="d-flex justify-content-between">
+          <div class="p-2">
+            <p>Price per day:</p>
+            <h3>¥<strong><%= number_with_delimiter(item.price_per_day, :delimiter => ',') %></strong></h3>
+          </div>
+          <div class="p-2">
+            <p>Location: <%= item.user.location %></strong></p>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <%= cl_image_tag item.photo.key, width: 380, height: 380, crop: :fill, class: 'img-fluid m-2' %>
+      </div>
+      <p>Size: <strong><%= item.size %></strong></p>
+      <p>Condition: <strong><%= item.condition %></strong></p>
+      <p>Description: <%= item.description.capitalize %></p>
+</div>

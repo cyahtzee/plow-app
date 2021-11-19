@@ -17,20 +17,20 @@
 
 <!-- Search -->
 <div class="container">
-      <%= form_tag root_path, method: :get, class: 'd-flex my-5' do %>
-        <%= date_field_tag :start,
+  <%= form_tag root_path, method: :get, class: 'd-flex my-5' do %>
+    <%= date_field_tag :start,
           params[:start],
           html5: true,
           class: "form-control"
         %>
-        <%= date_field_tag :end,
+    <%= date_field_tag :end,
           params[:end],
           html5: true,
           class: "form-control"
         %>
-        <%= select_tag :category, options_for_select(Item::CATEGORIES), prompt: "All Items"
+     <%= select_tag :category, options_for_select(Item::CATEGORIES), prompt: "All Items"
         %>
-        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
 </div>
 <!-- Search -->

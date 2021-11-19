@@ -1,25 +1,51 @@
+<div class="navbar navbar-expand-sm navbar-plow">
+<%= link_to items_path do %>
+  <div class="d-flex">
+    <%= image_tag "plow-logo.png", class: "logo-plow" %>
+    <h1>PLOW</h1>
+  </div>
+<% end %>
+  <ul class="navbar-nav">
+    <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
+  </ul>
+</div>
+
+
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
-      <%= simple_form_for @item do |f| %>
-        <% if current_user.location %>
-          <%= f.simple_fields_for @user do |u| %>
-            <%= u.input :location, { value: @user.location } %>
+      <div data-controller="collapsible-form" data-expanded-height="800px" >
+        <button class="btn btn-outline-primary w-100" data-action="click->collapsible-form#expandForm">Rent Out an Item</button>
+        <div data-collapsible-form-target="form">
+          <%= simple_form_for @item do |f| %>
+            <% if current_user.location %>
+              <%= f.simple_fields_for @user do |u| %>
+                <%= u.input :location, { value: @user.location } %>
+              <% end %>
+            <% else %>
+              <%= simple_fields_for @user do |u| %>
+                <%= u.input :location, label: "Address" %>
+              <% end %>
+            <% end %>
+            <%= f.input :title, label: "Rent item" %>
+            <%= f.input :category, as: :select, collection: Item::CATEGORIES, label: "Category" %>
+            <%= f.input :condition, as: :select, collection: Item::CONDITIONS, label: "Condition" %>
+            <%= f.input :size, label: "Size" %>
+            <%= f.input :price_per_day, label: "Price per Day" %>
+            <%= f.input :description, as: :text, label: "Few words about an item" %>
+            <%= f.input :photo, as: :file, label: "Upload a photo" %>
+            <%= f.submit "Rent Out" %>
           <% end %>
-        <% else %>
-          <%= simple_fields_for @user do |u| %>
-            <%= u.input :location, label: "Address" %>
-          <% end %>
-        <% end %>
-        <%= f.input :title, label: "Rent item" %>
-        <%= f.input :category, as: :select, collection: Item::CATEGORIES, label: "Category" %>
-        <%= f.input :condition, as: :select, collection: Item::CONDITIONS, label: "Condition" %>
-        <%= f.input :size, label: "Size" %>
-        <%= f.input :price_per_day, label: "Price per Day" %>
-        <%= f.input :description, as: :text, label: "Few words about an item" %>
-        <%= f.input :photo, as: :file, label: "Upload a photo" %>
-        <%= f.submit "Rent Out" %>
-      <% end %>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+
+
+<div class="flash flash-success alert alert-dismissible fade show" role="alert">
+  <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
+  <a data-dismiss="alert" aria-label="Close">
+  </a>
 </div>

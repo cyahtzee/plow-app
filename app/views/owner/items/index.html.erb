@@ -9,25 +9,30 @@
     <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
   </ul>
 </div>
-<% if @bookings.any? %>
-  <div class="container">
-    <div class="row">
-      <div class="col-10 offset-1">
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <% if current_user.items.any? %>
         <div class="container d-flex flex-column bd-highlight mb-3">
-          <% @bookings.each do |booking| %>
-            <%= render booking %>
+          <% current_user.items.each do |item| %>
+            <%= render "shared/card", item: item %>
+          <% end %>
+          <% else %>
+              <div class="container m-2 text-center">
+                <h1>No listed items yet 😥....</h1>
+                <h2>You can click on add to make your first item!</h2>
+              </div>
           <% end %>
         </div>
-      </div>
+    </div>
+    <div class="col-4">
+      <%= render partial: "items/new", locals: { item: @item, user: @user }  %>
     </div>
   </div>
-<% else %>
-
-<div class="container m-2">
-  <h1>No bookings yet 😥....</h1>
-  <h2>You can go back to listings and make your first booking!</h2>
 </div>
-<% end %>
+
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
   <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
   <a data-dismiss="alert" aria-label="Close">

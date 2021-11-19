@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
   end
 
   def new
-    @user = current_user
+    @user = User.new
     @item = Item.new
     authorize @item
   end
@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
     current_user.update(user_params) unless current_user.location
     authorize @item
     if @item.save
-      redirect_to item_path(@item)
+      redirect_to items_path
     else
       render :new
     end
@@ -34,8 +34,8 @@ class ItemsController < ApplicationController
     @markers = @user && @users.map do |user|
       {
         lat: user.latitude,
-        lng: user.longitude
-        # info_window: render_to_string(partial: "info_window", locals: { item: user })
+        lng: user.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { user: user })
       }
     end
   end

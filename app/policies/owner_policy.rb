@@ -1,15 +1,19 @@
-class BookingPolicy < ApplicationPolicy
+class OwnerPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
     end
   end
 
-  def create?
+  def index?
     true
   end
 
-  def update?
+  def new?
+    true
+  end
+
+  def create?
     true
   end
 end
