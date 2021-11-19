@@ -18,6 +18,12 @@ class ItemsController < ApplicationController
     create_markers
   end
 
+  def new
+    @user = User.new
+    @item = Item.new
+    authorize @item
+  end
+
   def create
     @item = Item.new(item_params)
     @item.user = current_user
@@ -25,9 +31,9 @@ class ItemsController < ApplicationController
     current_user.update(user_params) unless current_user.location
     authorize @item
     if @item.save
-      redirect_to owner_items_path
+      redirect_to items_path
     else
-      render :index
+      render :new
     end
   end
 
