@@ -20,7 +20,7 @@
     </div>
     <div class="d-flex justify-content-between">
       <% if booking.pending? %>
-      <!-- Display Acceptance Options-->
+      <!-- Display acceptance options-->
         <!-- Only for owner -->
         <% if booking.item.user_id == current_user.id %>
           <%= simple_form_for booking do |f| %>
@@ -34,7 +34,7 @@
         <% end %>
         <!-- Only for owner -->
       <% else %>
-        <!-- Display Status-->
+        <!-- Display status-->
         <small>Status:</small>
         <small>Booking was <strong><%= booking.status %></strong></small>
       <% end %>
