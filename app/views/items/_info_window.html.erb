@@ -1,5 +1,9 @@
 <div class="card-small">
-  <%= cl_image_tag(user.photo.key, class: "card-user avatar-small") %>
+      <% if user.photo.attached? %>
+      <%= cl_image_tag(user.photo.key, class: "card-user avatar-small") %>
+      <% else %>
+      <%= image_tag('profile.jpg', class: "card-user avatar-small") %>
+      <% end %>
   <h2><%= user.first_name %></h2>
   <div class="card-textbox">
     <% user.items.each do |item| %>
