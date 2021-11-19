@@ -20,8 +20,13 @@ class BookingsController < ApplicationController
   def update
     @booking = Booking.find(params[:id])
     authorize @booking
-    @booking.update(booking_params)
-    redirect_to :bookings
+    @owner = User.find(@booking.item.user_id)
+    if @owner == current_user
+      @booking.update(booking_params)
+      redirect_to :bookings
+    else
+      raise StandardError::NotAuthorized
+    end
   end
 
   private

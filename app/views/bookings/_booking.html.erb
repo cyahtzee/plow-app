@@ -21,14 +21,18 @@
     <div class="d-flex justify-content-between">
       <% if booking.pending? %>
       <!-- Display Acceptance Options-->
-        <%= simple_form_for booking do |f| %>
-        <%= f.input :status, as: :hidden, input_html: { value: 'accepted'} %>
-        <%= f.submit 'Accept', class: 'button-frost' %>
+        <!-- Only for owner -->
+        <% if booking.item.user_id == current_user.id %>
+          <%= simple_form_for booking do |f| %>
+          <%= f.input :status, as: :hidden, input_html: { value: 'accepted'} %>
+          <%= f.submit 'Accept', class: 'button-frost' %>
+          <% end %>
+          <%= simple_form_for booking do |f| %>
+          <%= f.input :status, as: :hidden, input_html: { value: 'rejected'} %>
+          <%= f.submit 'Reject', class: 'button-frost' %>
+          <% end %>
         <% end %>
-        <%= simple_form_for booking do |f| %>
-        <%= f.input :status, as: :hidden, input_html: { value: 'rejected'} %>
-        <%= f.submit 'Reject', class: 'button-frost' %>
-        <% end %>
+        <!-- Only for owner -->
       <% else %>
         <!-- Display Status-->
         <small>Status:</small>
