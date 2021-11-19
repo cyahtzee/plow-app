@@ -1,1 +1,26 @@
 <%= render partial: "items/new", locals: { item: @item, user: @user }  %>
+<div class=data-controller='collapsabl_form'>
+div data+action="click->colapsabel-form#expand"
+<div data-collapsable-form-target="elementToCollapse">
+</div>
+</div>
+
+<div class="container m-2">
+  <h1>No bookings yet 😥....</h1>
+  <h2>You can go back to listings and make your first booking!</h2>
+</div>
+<% end %>
+<div class="flash flash-success alert alert-dismissible fade show" role="alert">
+  <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
+  <a data-dismiss="alert" aria-label="Close">
+  </a>
+</div>
+static targets = ["elementToCollapse"]
+connect
+this.element.style.height = "0px"
+this.element.style.overflow = "hidden"
+this.element.style.transition = ""
+
+expand
+this.currentTarget.style.display = "none"
+this.elementToCollapse.style.height = "150px"
