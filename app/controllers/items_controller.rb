@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
   def index
+    @user = User.new
+    @item = Item.new
     @items = policy_scope(Item)
     @users = User.all
     filter_dates

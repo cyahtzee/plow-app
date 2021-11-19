@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-plow">
+<div class="navbar navbar-expand-sm navbar-plow mb-2">
 <%= link_to items_path do %>
   <div class="d-flex">
     <%= image_tag "plow-logo.png", class: "logo-plow" %>
@@ -9,8 +9,6 @@
     <li class="nav-item mr-4"><h2><%= link_to "All Listings", items_path %></h2></li>
   </ul>
 </div>
-
-
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
@@ -34,7 +32,7 @@
             <%= f.input :price_per_day, label: "Price per Day" %>
             <%= f.input :description, as: :text, label: "Few words about an item" %>
             <%= f.input :photo, as: :file, label: "Upload a photo" %>
-            <%= f.submit "Rent Out" %>
+             <%= f.submit "Rent Out", class: 'button-frost', data: {toggle: 'modal', target: '#myNewItem'} %>
           <% end %>
         </div>
       </div>
@@ -42,10 +40,28 @@
   </div>
 </div>
 
-
-
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
   <span><strong><%= current_user.first_name  %></strong><i class="far fa-snowflake" style="color:#5EB799 !important;"></i>Welcome back!</span>
   <a data-dismiss="alert" aria-label="Close">
   </a>
+</div>
+
+<div class="modal fade" id="myNewItem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><strong>Confirmation</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Thank you for leasing an item! You can currently review any pending requests in "My Bookings".
+      </div>
+      <div class="modal-footer">
+        <%= link_to 'Items List', items_path, class: 'btn btn-primary' %>
+        <%= link_to 'My Bookings', bookings_path, class: 'btn btn-secondary' %>
+      </div>
+    </div>
+  </div>
 </div>
