@@ -12,16 +12,13 @@
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
-      <div data-controller="collapsible-form" data-expanded-height="800px" >
-        <button class="button-frost w-100" data-action="click->collapsible-form#expandForm">Rent Out an Item</button>
-        <div data-collapsible-form-target="form">
-          <%= simple_form_for @item do |f| %>
+          <%= simple_form_for(@item) do |f| %>
             <% if current_user.location %>
               <%= f.simple_fields_for @user do |u| %>
                 <%= u.input :location, { value: @user.location } %>
               <% end %>
             <% else %>
-              <%= simple_fields_for @user do |u| %>
+              <%= f.simple_fields_for @user do |u| %>
                 <%= u.input :location, label: "Address" %>
               <% end %>
             <% end %>
@@ -34,8 +31,6 @@
             <%= f.input :photo, as: :file, label: "Upload a photo" %>
              <%= f.submit "Rent Out", class: 'button-frost', data: {toggle: 'modal', target: '#myNewItem'} %>
           <% end %>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -45,6 +40,7 @@
   <a data-dismiss="alert" aria-label="Close">
   </a>
 </div>
+
 
 <div class="modal fade" id="myNewItem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
