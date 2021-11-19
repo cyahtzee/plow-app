@@ -13,7 +13,7 @@
   <div class="row">
     <div class="col-8 offset-2">
       <div data-controller="collapsible-form" data-expanded-height="800px" >
-        <button class="btn btn-outline-primary w-100" data-action="click->collapsible-form#expandForm">Rent Out an Item</button>
+        <button class="button-frost w-100" data-action="click->collapsible-form#expandForm">Rent Out an Item</button>
         <div data-collapsible-form-target="form">
           <%= simple_form_for @item do |f| %>
             <% if current_user.location %>

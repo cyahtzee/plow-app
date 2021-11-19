@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = current_user
     @item = Item.new
     authorize @item
   end
