@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   def index
     @items = policy_scope(Item)
     @users = User.all
-    ####
+    # Filter by location
     if params[:start].present? && params[:end].present?
       @id_array = []
       @items.each do |item|
@@ -14,15 +14,8 @@ class ItemsController < ApplicationController
       end
       @items = Item.where.not(id: @id_array)
     end
-    #####
-
-    @markers = @users.geocoded.map do |user|
-      {
-        lat: user.latitude,
-        lng: user.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { item: user })
-      }
-    end
+    # Add markers to map
+    create_markers
   end
 
   def new
@@ -65,6 +58,16 @@ class ItemsController < ApplicationController
     booking_range = booking.start_date..booking.end_date
     query_range = Date.parse(params[:start])..Date.parse(params[:end])
     booking_range.cover?(query_range.begin) && booking_range.cover?(query_range.end)
+  end
+
+  def create_markers
+    @markers = @users.geocoded.map do |user|
+      {
+        lat: user.latitude,
+        lng: user.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { user: user })
+      }
+    end
   end
 
   def item_params

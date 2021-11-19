@@ -1,0 +1,9 @@
+<div class="card-small">
+  <%= cl_image_tag(user.photo.key, class: "card-user avatar-small") %>
+  <h2><%= user.first_name %></h2>
+  <div class="card-textbox">
+    <% user.items.each do |item| %>
+      <p class="marker-category"><%= item.category %></p>
+    <% end %>
+  </div>
+</div>
