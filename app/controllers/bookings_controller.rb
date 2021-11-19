@@ -1,13 +1,14 @@
 class BookingsController < ApplicationController
   def index
     @bookings = policy_scope(Booking)
+    @bookings = current_user.bookings + current_user.bookings_as_owner
   end
 
   def create
     @item = Item.find(params[:item_id])
     @booking = Booking.new(booking_params)
     @booking.user = current_user
-    @booking.item_id = params[:item_id]
+    @booking.item = @item
     authorize @booking
     if @booking.save
       # Commenting out for modal to works, otherwise it overlaps.
