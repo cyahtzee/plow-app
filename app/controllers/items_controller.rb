@@ -4,8 +4,7 @@ class ItemsController < ApplicationController
     @item = Item.new
     @items = policy_scope(Item)
     @users = User.all
-    filter_dates
-    filter_categories
+    filter
     create_markers
   end
 
@@ -45,24 +44,27 @@ class ItemsController < ApplicationController
 
   private
 
-  def filter_dates
-    if params[:start].present? && params[:end].present?
-      @id_array = []
-      @items.each do |item|
-        item.bookings.each do |booking|
-          if date_unavailable?(booking) && booking.status == "accepted"
-            @id_array << booking.item_id
-          end
-        end
-      end
-      @items = Item.where.not(id: @id_array)
+  def filter
+    @category = params[:category]
+    if params[:start].present? && params[:end].present? && params[:category].present?
+      filter_dates
+      @items = Item.where(id: @id_array, category: @category)
+    elsif params[:start].present? && params[:end].present?
+      filter_dates
+      @items = Item.where(id: @id_array)
+    elsif params[:category].present?
+      @items = Item.where(category: @category)
     end
   end
 
-  def filter_categories
-    if params[:commit].present?
-      category = params[:commit]
-      @items = Item.where(category: category)
+  def filter_dates
+    @id_array = Item.all.map { |item| item.id }
+    @items.each do |item|
+      item.bookings.each do |booking|
+        if date_unavailable?(booking) && booking.status == "accepted"
+          @id_array.delete(booking.item_id)
+        end
+      end
     end
   end
 
